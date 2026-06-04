@@ -8,10 +8,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* This moves your inline flex styling into clean CSS, 
+           and ensures the buttons stay centered on the landing page */
+        .download-buttons {
+            display: flex; 
+            gap: 15px; 
+            margin: 0 auto 20px;
+            justify-content: center;
+        }
+        @media (max-width: 480px) {
+            .download-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <header>
+
+    <header>
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
             <div class="logo">
                 <img src="assets/images/logo.png" alt="Nepali Kanji Logo">
                 <span>NEPALI KANJI</span>
@@ -21,13 +38,15 @@
                 <a href="privacy.html">Privacy</a>
                 <a href="terms.html">Terms</a>
             </nav>
-        </header>
+        </div>
+    </header>
 
-        <section class="hero">
+    <section class="hero">
+        <div class="container">
             <h1>Learn Kanji. <br>In your language.</h1>
             <p>The first professional Kanji learning app with accurate Nepali translations, stroke order animations, and JLPT-focused training.</p>
             
-            <div class="download-buttons" style="display: flex; gap: 15px; margin-bottom: 20px;">
+            <div class="download-buttons">
                 <a href="https://play.google.com/store/apps/details?id=com.nepalikanji&pcampaignid=web_share" class="btn google-play" target="_blank" rel="noopener noreferrer">Get it on Google Play</a>
                 <a href="https://apps.apple.com/np/app/nepali-kanji/id6767144621" class="btn app-store" target="_blank" rel="noopener noreferrer">Download on the App Store</a>
             </div>
@@ -35,9 +54,11 @@
             <div class="hero-image">
                 <img src="assets/images/feature_image.png" alt="Nepali Kanji App Preview">
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="features" id="features">
+    <section class="features" id="features">
+        <div class="container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
             <div class="feature-card">
                 <h3>Native Nepali</h3>
                 <p>Don't get lost in English-to-Japanese translations. Learn Kanji meanings in clear, native Nepali.</p>
@@ -50,9 +71,11 @@
                 <h3>JLPT Ready</h3>
                 <p>Full support for N5 through N1 levels with localized quizzes and progress tracking.</p>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <footer>
+    <footer>
+        <div class="container">
             <div class="footer-content">
                 <div class="copyright">© <span id="year"></span> Nepali Kanji Team. All rights reserved.</div>
                 <div class="footer-links">
@@ -62,8 +85,9 @@
                     <a href="#">Support</a>
                 </div>
             </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
+
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
