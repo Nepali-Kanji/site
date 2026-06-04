@@ -27,14 +27,12 @@ body {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 2rem;
+    width: 100%;
 }
 
 /* Header */
 header {
-    padding: 2rem 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 100%;
 }
 
 .logo {
@@ -67,9 +65,10 @@ nav a:hover {
 
 /* Hero Section */
 .hero {
-    padding: 8rem 0;
+    padding: 8rem 0 4rem 0;
     text-align: center;
     background: radial-gradient(circle at top right, #EEF2FF, transparent);
+    width: 100%;
 }
 
 .hero h1 {
@@ -86,6 +85,16 @@ nav a:hover {
     color: var(--text-main);
     max-width: 600px;
     margin: 0 auto 2.5rem;
+}
+
+/* FIXED: Download Buttons centered globally */
+.download-buttons {
+    display: flex;
+    gap: 15px;
+    margin: 0 auto 2.5rem;
+    justify-content: center; /* Centers the buttons horizontally */
+    align-items: center;
+    width: 100%;
 }
 
 .btn {
@@ -112,9 +121,11 @@ nav a:hover {
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
 }
 
 .hero-image img {
+    display: block;
     width: 100%;
     height: auto;
     border-radius: 24px;
@@ -125,9 +136,7 @@ nav a:hover {
 /* Features */
 .features {
     padding: 6rem 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    width: 100%;
 }
 
 .feature-card {
@@ -148,6 +157,7 @@ footer {
     padding: 6rem 0 3rem;
     background-color: var(--slate-50);
     border-top: 1px solid var(--slate-100);
+    width: 100%;
 }
 
 .footer-content {
@@ -195,6 +205,7 @@ footer {
     line-height: 1.8;
 }
 
+/* Responsive adjustments */
 @media (max-width: 480px) {
     .download-buttons {
         flex-direction: column;
