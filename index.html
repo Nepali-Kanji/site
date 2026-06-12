@@ -1,22 +1,86 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary SEO -->
     <title>Nepali Kanji | Master Kanji with Nepali Meanings</title>
+    <meta name="description" content="Learn Japanese Kanji with accurate Nepali meanings. Master JLPT N5–N1 Kanji through stroke order animations, quizzes, progress tracking, and localized Nepali learning.">
+    <meta name="keywords" content="Nepali Kanji, Kanji Learning App, Japanese Kanji, JLPT N5, JLPT N4, JLPT N3, JLPT N2, JLPT N1, Learn Japanese in Nepali, Japanese Language Nepal, Kanji Dictionary Nepali">
+    <meta name="author" content="Nepali Kanji Team">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://nepalikanjiapp.com/">
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#2563eb">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Nepali Kanji | Master Kanji with Nepali Meanings">
+    <meta property="og:description" content="The first professional Kanji learning app with accurate Nepali translations, stroke order animations, and JLPT-focused training.">
+    <meta property="og:url" content="https://nepalikanji.com/">
+    <meta property="og:site_name" content="Nepali Kanji">
+    <meta property="og:image" content="https://nepalikanji.com/assets/images/feature_image.png">
+    <meta property="og:image:alt" content="Nepali Kanji App Preview">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nepali Kanji | Master Kanji with Nepali Meanings">
+    <meta name="twitter:description" content="Learn Japanese Kanji with Nepali meanings, JLPT practice, and stroke order animations.">
+    <meta name="twitter:image" content="https://nepalikanji.com/assets/images/feature_image.png">
+
+    <!-- Mobile App -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Nepali Kanji">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <link rel="apple-touch-icon" href="assets/images/logo.png">
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      "name": "Nepali Kanji",
+      "applicationCategory": "EducationalApplication",
+      "operatingSystem": "Android, iOS",
+      "description": "Learn Japanese Kanji with accurate Nepali meanings, stroke order animations, JLPT preparation, quizzes, and progress tracking.",
+      "url": "https://nepalikanji.com/",
+      "image": "https://nepalikanji.com/assets/images/feature_image.png",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Nepali Kanji Team"
+      },
+      "downloadUrl": [
+        "https://play.google.com/store/apps/details?id=com.nepalikanji",
+        "https://apps.apple.com/np/app/nepali-kanji/id6767144621"
+      ]
+    }
+    </script>
+
     <style>
-        /* This moves your inline flex styling into clean CSS, 
-           and ensures the buttons stay centered on the landing page */
         .download-buttons {
-            display: flex; 
-            gap: 15px; 
+            display: flex;
+            gap: 15px;
             margin: 0 auto 20px;
             justify-content: center;
         }
+
         @media (max-width: 480px) {
             .download-buttons {
                 flex-direction: column;
@@ -43,12 +107,27 @@
 
     <section class="hero">
         <div class="container">
-            <h1>Learn Kanji. <br>with Nepali meanings.</h1>
-            <p>The first professional Kanji learning app with accurate Nepali translations, stroke order animations, and JLPT-focused training.</p>
-            
+            <h1>Learn Kanji.<br>with Nepali meanings.</h1>
+
+            <p>
+                The first professional Kanji learning app with accurate Nepali translations,
+                stroke order animations, and JLPT-focused training.
+            </p>
+
             <div class="download-buttons">
-                <a href="https://play.google.com/store/apps/details?id=com.nepalikanji&pcampaignid=web_share" class="btn google-play" target="_blank" rel="noopener noreferrer">Get it on Google Play</a>
-                <a href="https://apps.apple.com/np/app/nepali-kanji/id6767144621" class="btn app-store" target="_blank" rel="noopener noreferrer">Download on the App Store</a>
+                <a href="https://play.google.com/store/apps/details?id=com.nepalikanji&pcampaignid=web_share"
+                   class="btn google-play"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Get it on Google Play
+                </a>
+
+                <a href="https://apps.apple.com/np/app/nepali-kanji/id6767144621"
+                   class="btn app-store"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Download on the App Store
+                </a>
             </div>
 
             <div class="hero-image">
@@ -58,26 +137,44 @@
     </section>
 
     <section class="features" id="features">
-        <div class="container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+        <div class="container"
+             style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+
             <div class="feature-card">
                 <h3>Native Nepali</h3>
-                <p>Don't get lost in English-to-Japanese translations. Learn Kanji meanings in clear, native Nepali.</p>
+                <p>
+                    Don't get lost in English-to-Japanese translations.
+                    Learn Kanji meanings in clear, native Nepali.
+                </p>
             </div>
+
             <div class="feature-card">
                 <h3>Stroke Animations</h3>
-                <p>Visualize the correct stroke order for over 2,000 Kanji using our fluid, real-time drawing animations.</p>
+                <p>
+                    Visualize the correct stroke order for over 2,000 Kanji
+                    using our fluid, real-time drawing animations.
+                </p>
             </div>
+
             <div class="feature-card">
                 <h3>JLPT Ready</h3>
-                <p>Full support for N5 through N1 levels with localized quizzes and progress tracking.</p>
+                <p>
+                    Full support for N5 through N1 levels with localized
+                    quizzes and progress tracking.
+                </p>
             </div>
+
         </div>
     </section>
 
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="copyright">© <span id="year"></span> Nepali Kanji Team. All rights reserved.</div>
+                <div class="copyright">
+                    © <span id="year"></span> Nepali Kanji Team.
+                    All rights reserved.
+                </div>
+
                 <div class="footer-links">
                     <a href="#features">Features</a>
                     <a href="privacy.html">Privacy Policy</a>
@@ -89,7 +186,10 @@
     </footer>
 
     <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
+        document.getElementById('year').textContent =
+            new Date().getFullYear();
     </script>
+
 </body>
 </html>
+```
